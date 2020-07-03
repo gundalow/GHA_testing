@@ -1,0 +1,10 @@
+{
+    "docs": "https://docs.ansible.com/ansible/devel/dev_guide/testing/sanity/no-unicode-literals.html", 
+    "results": [
+        {
+            "message": "The test `ansible-test sanity --test no-unicode-literals` [[explain](https://docs.ansible.com/ansible/devel/dev_guide/testing/sanity/no-unicode-literals.html)] failed with 1 error:", 
+            "output": "tests/output/.tmp/delegation/python3.7/lib/python3.7/site-packages/setuptools/config.py:1:41: do not use `unicode_literals`"
+        }
+    ], 
+    "verified": false
+}

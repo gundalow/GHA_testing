@@ -1,0 +1,10 @@
+{
+    "docs": "https://docs.ansible.com/ansible/devel/dev_guide/testing/sanity/pep8.html", 
+    "results": [
+        {
+            "message": "The test `ansible-test sanity --test pep8` [[explain](https://docs.ansible.com/ansible/devel/dev_guide/testing/sanity/pep8.html)] failed with 3 errors:", 
+            "output": "plugins/modules/zabbix_action.py:1974:34: E251: unexpected spaces around keyword / parameter equals\nplugins/modules/zabbix_action.py:1974:36: E222: multiple spaces after operator\nplugins/modules/zabbix_action.py:1974:36: E251: unexpected spaces around keyword / parameter equals"
+        }
+    ], 
+    "verified": false
+}

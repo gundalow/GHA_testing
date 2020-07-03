@@ -1,0 +1,10 @@
+{
+    "docs": "https://docs.ansible.com/ansible/devel/dev_guide/testing/sanity/replace-urlopen.html", 
+    "results": [
+        {
+            "message": "The test `ansible-test sanity --test replace-urlopen` [[explain](https://docs.ansible.com/ansible/devel/dev_guide/testing/sanity/replace-urlopen.html)] failed with 8 errors:", 
+            "output": "tests/output/.tmp/delegation/python3.7/lib/python3.7/site-packages/pkg_resources/_vendor/six.py:386:21: use `ansible.module_utils.urls.open_url` instead of `urlopen`\ntests/output/.tmp/delegation/python3.7/lib/python3.7/site-packages/setuptools/_vendor/six.py:386:21: use `ansible.module_utils.urls.open_url` instead of `urlopen`\ntests/output/.tmp/delegation/python3.7/lib/python3.7/site-packages/setuptools/command/upload.py:14:56: use `ansible.module_utils.urls.open_url` instead of `urlopen`\ntests/output/.tmp/delegation/python3.7/lib/python3.7/site-packages/setuptools/command/upload.py:155:22: use `ansible.module_utils.urls.open_url` instead of `urlopen`\ntests/output/.tmp/delegation/python3.7/lib/python3.7/site-packages/setuptools/package_index.py:320:42: use `ansible.module_utils.urls.open_url` instead of `urlopen`\ntests/output/.tmp/delegation/python3.7/lib/python3.7/site-packages/setuptools/package_index.py:1047:47: use `ansible.module_utils.urls.open_url` instead of `urlopen`\ntests/output/.tmp/delegation/python3.7/lib/python3.7/site-packages/setuptools/package_index.py:1113:31: use `ansible.module_utils.urls.open_url` instead of `urlopen`\ntests/output/.tmp/delegation/python3.7/lib/python3.7/site-packages/setuptools/ssl_support.py:206:14: use `ansible.module_utils.urls.open_url` instead of `urlopen`"
+        }
+    ], 
+    "verified": false
+}
