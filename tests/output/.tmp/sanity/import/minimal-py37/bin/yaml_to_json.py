@@ -1,1 +1,0 @@
-/tmp/tmpD3dmse/ansible_test/_data/sanity/import/yaml_to_json.py

@@ -1,1 +1,0 @@
-/tmp/tmpD3dmse/ansible_test/_data/sanity/import/importer.py
