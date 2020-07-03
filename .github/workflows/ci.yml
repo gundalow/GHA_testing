@@ -3,10 +3,7 @@ on:
 # Run CI against all pushes (direct commits) and Pull Requests
 # push: ensure we always run tests
 # pull_requests: skip if PR only modifies "./roles/"
-  push:
   pull_request:
-    ignore_paths:
-      - 'roles/**'
 
 jobs:
   sanity:
@@ -17,7 +14,6 @@ jobs:
           - devel
         python:
           - 3.7
-        exclude:
     runs-on: ubuntu-latest
     steps:
 
@@ -34,18 +30,13 @@ jobs:
         with:
           python-version: ${{ matrix.python }}
 
-      - name: lint code
-        run: echo "::error file=badcode.py,line=1,col=0::Missing module docstring"
-      - name: lint code
-        run: echo "::error file=badcode.py,line=3,col=0::Constant name "a" doesn't conform to UPPER_CASE naming style (invalid-name)"
+      # Install the head of the given branch (devel, stable-2.10)
+      - name: Install ansible-base (${{ matrix.ansible }})
+        run: pip install https://github.com/ansible/ansible/archive/${{ matrix.ansible }}.tar.gz --disable-pip-version-check
 
-#      # Install the head of the given branch (devel, stable-2.10)
-#      - name: Install ansible-base (${{ matrix.ansible }})
-#        run: pip install https://github.com/ansible/ansible/archive/${{ matrix.ansible }}.tar.gz --disable-pip-version-check
-#
-#      # run ansible-test sanity inside of Docker.
-#      # The docker container has all the pinned dependencies that are required.
-#      # Explicity specify the version of Python we want to test
-#      - name: Run sanity tests
-#        run: ansible-test sanity --docker -v --color --python ${{ matrix.python }}
-#        working-directory: ./ansible_collections/community/zabbix
+      # run ansible-test sanity inside of Docker.
+      # The docker container has all the pinned dependencies that are required.
+      # Explicity specify the version of Python we want to test
+      - name: Run sanity tests
+        run: ansible-test sanity --docker -v --color --python ${{ matrix.python }}
+        working-directory: ./ansible_collections/community/zabbix
