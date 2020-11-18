@@ -1,1 +1,0 @@
-/home/johnb/git/work/ansible/ansible-with-gha/test/lib/ansible_test/_data/sanity/import/importer.py
