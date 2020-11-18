@@ -11,3 +11,4 @@ plugins/modules/zabbix_maintenance.py validate-modules:doc-elements-mismatch
 plugins/modules/zabbix_maintenance.py validate-modules:parameter-list-no-elements
 plugins/doc_fragments/zabbix.py future-import-boilerplate
 plugins/doc_fragments/zabbix.py metaclass-boilerplate
+plugins/fdsfd.py metaclass-boilerplate
