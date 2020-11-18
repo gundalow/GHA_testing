@@ -26,10 +26,6 @@ requirements:
     - "zabbix-api >= 0.5.4"
 
 options:
-    name:
-        description:
-            - Name of the action
-        required: true
     event_source:
         description:
             - Type of events that the action will handle.
@@ -46,7 +42,7 @@ options:
     status:
         description:
             - Status of the action.
-        choices: ['enabled', 'disabled']
+        choices: ['enabled', 'disa']
         default: 'enabled'
     pause_in_maintenance:
         description:
