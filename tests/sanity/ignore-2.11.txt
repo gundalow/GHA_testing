@@ -1,16 +1,12 @@
-scripts/inventory/zabbix.py metaclass-boilerplate
 plugins/modules/zabbix_action.py validate-modules:doc-elements-mismatch
 plugins/modules/zabbix_action.py validate-modules:doc-required-mismatch
 plugins/modules/zabbix_action.py validate-modules:invalid-argument-name
 plugins/modules/zabbix_action.py validate-modules:missing-suboption-docs
 plugins/modules/zabbix_action.py validate-modules:nonexistent-parameter-documented
 plugins/modules/zabbix_action.py validate-modules:parameter-list-no-elements
-plugins/fdsads.py metaclass-boilerplate
 plugins/modules/zabbix_action.py validate-modules:parameter-type-not-in-doc
 plugins/modules/zabbix_action.py validate-modules:undocumented-parameter
-plugins/fdsfdfdsfdsfds.py metaclass-boilerplate
 plugins/modules/zabbix_maintenance.py validate-modules:doc-elements-mismatch
 plugins/modules/zabbix_maintenance.py validate-modules:parameter-list-no-elements
 plugins/doc_fragments/zabbix.py future-import-boilerplate
 plugins/doc_fragments/zabbix.py metaclass-boilerplate
-plugins/fdsfd.py metaclass-boilerplate

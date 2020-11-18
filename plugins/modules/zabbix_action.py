@@ -1966,7 +1966,7 @@ def main():
                     media_type=dict(type='str', required=False),
                     subject=dict(type='int', required=False),
                     message=dict(type='str', required=False),
-                  send_to_groups=dict(type='list', required=False),
+                    send_to_groups=dict(type='list', required=False),
                     send_to_users = dict(type='list', required=True),
                 ),
                 required_if=[
