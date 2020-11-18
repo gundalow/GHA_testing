@@ -1,0 +1,14 @@
+namespace: gundalow
+name: ghatesting
+version: 0.1.0
+readme: README.md
+authors:
+  - Ansible (https://github.com/ansible)
+description: null
+license_file: COPYING
+tags: [community]
+repository: https://github.com/ansible-collections/community.general
+documentation: https://docs.ansible.com/ansible/latest/collections/community/general/
+homepage: https://github.com/ansible-collections/community.general
+issues: https://github.com/ansible-collections/community.general/issues
+#type: flatmap
