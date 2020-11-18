@@ -1,5 +1,3 @@
-plugins/modules/zabbix_action.py validate-modules:doc-choices-do-not-match-spec
-plugins/modules/zabbix_action.py validate-modules:doc-default-does-not-match-spec
 scripts/inventory/zabbix.py metaclass-boilerplate
 plugins/modules/zabbix_action.py validate-modules:doc-elements-mismatch
 plugins/modules/zabbix_action.py validate-modules:doc-required-mismatch

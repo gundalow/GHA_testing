@@ -1,0 +1,10 @@
+{
+    "docs": "https://docs.ansible.com/ansible/devel/dev_guide/testing/sanity/symlinks.html", 
+    "results": [
+        {
+            "message": "The test `ansible-test sanity --test symlinks` [[explain](https://docs.ansible.com/ansible/devel/dev_guide/testing/sanity/symlinks.html)] failed with 6 errors:", 
+            "output": "tests/output/.tmp/sanity/import/minimal-py37/bin/importer.py:0:0: symlinks outside content tree are not allowed: ../../../../../../../../../../ansible/ansible-with-gha/test/lib/ansible_test/_data/sanity/import/importer.py\ntests/output/.tmp/sanity/import/minimal-py37/bin/python:0:0: symlinks outside content tree are not allowed: ../../../../../../../../../../../../../../usr/bin/python3.7\ntests/output/.tmp/sanity/import/minimal-py37/bin/python3:0:0: symlinks outside content tree are not allowed: ../../../../../../../../../../../../../../usr/bin/python3.7\ntests/output/.tmp/sanity/import/minimal-py37/bin/python3.7:0:0: symlinks outside content tree are not allowed: ../../../../../../../../../../../../../../usr/bin/python3.7\ntests/output/.tmp/sanity/import/minimal-py37/bin/yaml_to_json.py:0:0: symlinks outside content tree are not allowed: ../../../../../../../../../../ansible/ansible-with-gha/test/lib/ansible_test/_data/sanity/import/yaml_to_json.py\ntests/output/.tmp/sanity/import/minimal-py37/lib64:0:0: broken symlinks are not allowed"
+        }
+    ], 
+    "verified": false
+}

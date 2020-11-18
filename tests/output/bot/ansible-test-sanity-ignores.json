@@ -1,0 +1,10 @@
+{
+    "docs": "https://docs.ansible.com/ansible/devel/dev_guide/testing/sanity/ignores.html", 
+    "results": [
+        {
+            "message": "The test `ansible-test sanity --test ignores` [[explain](https://docs.ansible.com/ansible/devel/dev_guide/testing/sanity/ignores.html)] failed with 1 error:", 
+            "output": "tests/sanity/ignore-2.11.txt:1:1: File 'scripts/inventory/zabbix.py' does not exist"
+        }
+    ], 
+    "verified": false
+}
